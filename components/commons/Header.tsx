@@ -15,13 +15,20 @@ export default function Header() {
                         </div>
 
                         <div className="navs-links | ml-auto">
-                            <ul className="flex sm:flex-col md:flex-row sm:flex-wrap gap-4">
-                                <li>Magento Support</li>
-                                <li>Integrate Themes</li>
-                                <li className="design">Website Design</li>
-                                <li className="blog">Blog</li>
-                                <li className="about-us">About</li>
-                            </ul>
+                            <nav className="main-nav">
+                                <button className="menu-toggle" aria-expanded="false" aira-controls="primary-navigation">
+                                    <span className="sr-only">Menu</span>
+                                    <span className="humberger-icon"></span>
+                                </button>
+                                <ul className="primary-navigation flex sm:flex-col md:flex-row sm:flex-wrap gap-4">
+                                    <li>Magento Support</li>
+                                    <li>Integrate Themes</li>
+                                    <li className="design">Website Design</li>
+                                    <li className="blog">Blog</li>
+                                    <li className="about-us">About</li>
+                                </ul>
+                            </nav>
+                            
                         </div>
                     </div>
                 </div>
