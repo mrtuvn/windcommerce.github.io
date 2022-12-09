@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Header from '../components/commons/Header'
-import Footer from '../components/commons/Footer'
-import Main from '../components/commons/Main'
+import Head from "next/head";
+import Image from "next/image";
+import Header from "../components/commons/Header";
+import Footer from "../components/commons/Footer";
+import Main from "../components/commons/Main";
 
 // interface Context {
 //   packageJSON: {
@@ -26,11 +26,17 @@ import Main from '../components/commons/Main'
 export default function Home() {
   return (
     <>
-      <main className="main flex flex-col h-full">
-      <Header/>
-      <Main/>
-      <Footer/>
+      <main
+        className="main flex flex-col h-full"
+        style={{
+          backgroundImage: `url('./images/animate-bg2.svg')`,
+          backgroundSize: "cover",
+        }}
+      >
+        <Header />
+        <Main />
+        <Footer />
       </main>
     </>
-  )
+  );
 }
