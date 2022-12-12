@@ -43,19 +43,25 @@ export default function Header() {
                   className="primary-navigation flex items-center sm:flex-col md:flex-row sm:flex-wrap gap-4"
                 >
                   <li>
-                    <Link>Magento Support</Link>
+                    <Link href="#">Magento Support</Link>
                   </li>
                   <li>
-                    <Link>Integrate Themes</Link>
+                    <Link href="#">Integrate Themes</Link>
                   </li>
                   <li>
-                    <Link className="design">Website Design</Link>
+                    <Link href="#" className="design">
+                      Website Design
+                    </Link>
                   </li>
                   <li>
-                    <Link className="blog">Blog</Link>
+                    <Link href="#" className="blog">
+                      Blog
+                    </Link>
                   </li>
                   <li>
-                    <Link className="about-us">About</Link>
+                    <Link href="#" className="about-us">
+                      About
+                    </Link>
                   </li>
                 </ul>
               </nav>

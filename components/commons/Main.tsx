@@ -1,5 +1,13 @@
 import Image from "next/image";
 
+function ExtraMarkUp() {
+  return (
+    <div>
+      <p>Sample pure function inside tsx</p>
+    </div>
+  );
+}
+
 export default function Main() {
   return (
     <>
@@ -94,6 +102,65 @@ export default function Main() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="techstack mb-4 md:mb-10">
+        <h5 className="text-center md:text-2xl mb-4">Our Stacks Used</h5>
+        <div className="flex flex-wrap justify-center gap-8">
+          <Image
+            src="/images/stacks/magento.svg"
+            width="80"
+            height="82"
+            alt="Magento"
+          />
+          <Image
+            src="/images/stacks/html5.svg"
+            width="80"
+            height="82"
+            alt="Html5"
+          />
+          <Image
+            src="/images/stacks/sass.svg"
+            width="80"
+            height="82"
+            alt="Sass"
+          />
+          <Image
+            src="/images/stacks/react.svg"
+            width="80"
+            height="82"
+            alt="React"
+          />
+          <Image
+            src="/images/stacks/apollo.svg"
+            width="80"
+            height="82"
+            alt="Apollo"
+          />
+          <Image
+            src="/images/stacks/webpack.svg"
+            width="80"
+            height="82"
+            alt="Webpack"
+          />
+          <Image
+            src="/images/stacks/graphql.svg"
+            width="80"
+            height="82"
+            alt="Graphql"
+          />
+          <Image
+            src="/images/stacks/redux.svg"
+            width="80"
+            height="82"
+            alt="Redux"
+          />
+          <Image
+            src="/images/stacks/typescript.svg"
+            width="80"
+            height="82"
+            alt="Typescript"
+          />
         </div>
       </section>
       <section className="contact-us mb-4 md:mb-8">
