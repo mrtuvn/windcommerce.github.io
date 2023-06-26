@@ -1,5 +1,3 @@
-import Image from "next/image";
-import SVGLOGO from "../../public/images/wind.svg";
 import Link from "next/link";
 
 export default function Header() {

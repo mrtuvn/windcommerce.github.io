@@ -1,5 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
 import Header from "../components/commons/Header";
 import Footer from "../components/commons/Footer";
 import Main from "../components/commons/Main";
