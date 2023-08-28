@@ -1,3 +1,5 @@
+import million from "million/compiler";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -7,10 +9,8 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: [
-      'images.unsplash.com'
-    ]
+    domains: ["images.unsplash.com"],
   },
-}
+};
 
-module.exports = nextConfig
+export default million.next(nextConfig);
