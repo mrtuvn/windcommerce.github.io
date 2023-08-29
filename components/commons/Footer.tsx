@@ -12,14 +12,14 @@ export default function Footer() {
     <>
       <footer>
         <div className="footer-inner container mt-5">
-          <div className="mx-auto grid gap-4 grid-cols-2 md:grid-cols-7 xl:grid-cols-12">
+          <div className="mx-auto grid grid-cols-2 gap-4 md:grid-cols-7 xl:grid-cols-12">
             <div className="logo-area col-span-1 md:col-span-4">
               <p className="text-uppercase">
                 <svg
                   width="150"
                   height="20"
                   viewBox="0 0 150 20"
-                  className="text-slate-900 dark:text-white w-auto h-6"
+                  className="text-slate-900 h-6 w-auto dark:text-white"
                 >
                   <path
                     fill="#38bdf8"
@@ -68,8 +68,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p className="copyright | text-center my-4">
-          2021 - {currentYear} © WINDCOMMERCE
+        <p className="copyright | my-4 text-center">
+          2021 - {currentYear} © WINDYECOMMERCE
         </p>
       </footer>
     </>

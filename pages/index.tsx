@@ -25,11 +25,11 @@ export default function Home() {
   return (
     <>
       <main
-        className="main flex flex-col h-full"
-        // style={{
-        //   backgroundImage: `url('./images/animate-bg2.svg')`,
-        //   backgroundSize: "cover",
-        // }}
+        className="main flex h-full flex-col"
+        style={{
+          backgroundImage: `url('./images/animate-bg2.svg')`,
+          backgroundSize: "cover",
+        }}
       >
         <Header />
         <Main />

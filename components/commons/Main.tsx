@@ -12,7 +12,7 @@ export default function Main() {
   return (
     <>
       <section className="main-hero relative"></section>
-      <section className="introduce text-center mb-4 md:mb-8">
+      <section className="introduce mb-4 text-center md:mb-8">
         <div className="container">
           <h1 className="md:text-3xl">
             WE ARE A DIGITAL AGENCY SPECIALIZING IN ONLINE COMMERCE SOLUTIONS
@@ -20,33 +20,33 @@ export default function Main() {
           <p>Our Focus Is Improving Customer Engagement, and Increase Sales.</p>
         </div>
       </section>
-      <section className="main-services mb-4 md:mb-8 sm:text-center">
+      <section className="main-services mb-4 sm:text-center md:mb-8">
         <div className="container">
-          <div className="services-wrap flex my-5 xs:flex-col sm:flex-col md:flex-row">
-            <div className="magento2-development bg-custom-brown text-white sm:p-2 md:p-6 xs:w-full md:w-1/3">
+          <div className="services-wrap xs:flex-col my-5 flex sm:flex-col md:flex-row">
+            <div className="magento2-development xs:w-full bg-custom-brown text-white sm:p-2 md:w-1/3 md:p-6">
               <Image
-                className="mx-auto mb-4 logo-brand"
+                className="logo-brand mx-auto mb-4"
                 src="/images/magento2.png"
                 width="80"
                 height="80"
                 alt="service-develop"
               />
-              <p className="service-title uppercase pb-4 md:text-2xl">
+              <p className="service-title pb-4 uppercase md:text-2xl">
                 Magento 2 Development
               </p>
               <div>
-                <p className="line-clamp-3 mb-4">
+                <p className="mb-4 line-clamp-3">
                   Using modern tools and technologies, Magento 2 is more
                   flexible, open and more compatible than any other eCommerce
                   platforms.
                 </p>
-                <a className="uppercase mt-auto" href="#">
+                <a className="mt-auto uppercase" href="#">
                   Learn More!
                 </a>
               </div>
             </div>
-            <div className="nextjs-development bg-main-orange text-white sm:p-2 md:p-6 xs:w-full md:w-1/3">
-              <div className="mx-auto mb-4 text-center flex gap-2 justify-center">
+            <div className="nextjs-development xs:w-full bg-main-orange text-white sm:p-2 md:w-1/3 md:p-6">
+              <div className="mx-auto mb-4 flex justify-center gap-2 text-center">
                 <Image
                   className="logo-brand"
                   src="/images/react.svg"
@@ -62,41 +62,41 @@ export default function Main() {
                   alt="service-develop"
                 />
               </div>
-              <p className="service-title uppercase pb-4 md:text-2xl">
+              <p className="service-title pb-4 uppercase md:text-2xl">
                 Nextjs Development
               </p>
               <div>
-                <p className="line-clamp-3 mb-4">
+                <p className="mb-4 line-clamp-3">
                   Using modern tools and technologies, Nextjs is more flexible
                   also capability with React ecosystem, open and more compatible
                   than any other eCommerce platforms. We use modern frontend
                   stack to delivery your site faster. Reduce time-to-market
                   times
                 </p>
-                <a className="uppercase mt-auto" href="#">
+                <a className="mt-auto uppercase" href="#">
                   Learn More!
                 </a>
               </div>
             </div>
-            <div className="consults-audit bg-custom-brown text-white sm:p-2 md:p-6 xs:w-full md:w-1/3">
+            <div className="consults-audit xs:w-full bg-custom-brown text-white sm:p-2 md:w-1/3 md:p-6">
               <Image
-                className="mx-auto mb-4 logo-brand"
+                className="logo-brand mx-auto mb-4"
                 src="/images/audit.svg"
                 width="80"
                 height="80"
                 alt="service-develop"
               />
-              <p className="service-title uppercase pb-4 md:text-2xl">
+              <p className="service-title pb-4 uppercase md:text-2xl">
                 Consulting
               </p>
               <div>
-                <p className="line-clamp-3 mb-4">
+                <p className="mb-4 line-clamp-3">
                   We also provide consulting and audit projects or sites to give
                   best advices. Help you improve website for fastest possible
                   following google and standards. Make sure all green CVW.
                   Guarrantee get best results
                 </p>
-                <a className="uppercase mt-auto" href="#">
+                <a className="mt-auto uppercase" href="#">
                   Learn More!
                 </a>
               </div>
@@ -105,7 +105,7 @@ export default function Main() {
         </div>
       </section>
       <section className="techstack mb-4 md:mb-10">
-        <h5 className="text-center md:text-2xl mb-4">Our Stacks Used</h5>
+        <h5 className="mb-4 text-center md:text-2xl">Our Stacks Used</h5>
         <div className="flex flex-wrap justify-center gap-8">
           <Image
             src="/images/stacks/magento.svg"
@@ -163,11 +163,11 @@ export default function Main() {
           />
         </div>
       </section>
-      <section className="contact-us mb-4 md:mb-8">
+      <section className="contact-us mb-4 hidden md:mb-8">
         <div className="container">
-          <h5 className="text-center md:text-2xl mb-4">Contact Us</h5>
+          <h5 className="mb-4 text-center md:text-2xl">Contact Us</h5>
           <form method="post" action="" name="contactForm">
-            <div className="form-inner-wrap grid gap-4 grid-cols-2">
+            <div className="form-inner-wrap grid grid-cols-2 gap-4">
               <input
                 type="text"
                 className="form-input rounded"
@@ -199,7 +199,7 @@ export default function Main() {
               />
               <div className="form-actions col-span-2 mx-auto">
                 <button
-                  className="btn-primary uppercase rounded-full round-full bg-main-primary inline-flex items-center p-2 px-4 text-white text-center"
+                  className="btn-primary round-full inline-flex items-center rounded-full bg-main-primary p-2 px-4 text-center uppercase text-white"
                   type="submit"
                 >
                   SUbMIT
