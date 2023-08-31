@@ -8,9 +8,10 @@ module.exports = {
     colors: {
       "custom-brown": "#44392e",
       white: "#fff",
+      accent2: "#afa",
+      accent3: "#333",
       main: {
         primary: "rgb(255,126,0)",
-        accent: "#44392e",
         orange: "#f57b20",
       },
     },

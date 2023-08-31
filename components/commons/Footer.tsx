@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer>
+      <footer className="mt-auto">
         <div className="footer-inner container mt-5">
           <div className="mx-auto grid grid-cols-2 gap-4 md:grid-cols-7 xl:grid-cols-12">
             <div className="logo-area col-span-1 md:col-span-4">
