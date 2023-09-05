@@ -1,5 +1,5 @@
-import Header from "../components/commons/Header";
-import Footer from "../components/commons/Footer";
+import Header from "#/ui/Header";
+import Footer from "#/ui/Footer";
 import Main from "../components/commons/Main";
 
 // interface Context {
@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <>
       <main
-        className="main  flex h-full min-h-[100svh] flex-col bg-[#50d71e]"
+        className="main  flex h-full min-h-[100svh] flex-col"
         style={{
           // backgroundImage: `url('./images/animate-bg2.svg')`,
           // backgroundSize: "cover",

@@ -1,6 +1,12 @@
+"use client";
+import Link from "next/link";
+import Image from "next/image";
+
 export default function Footer() {
   const email = "tuna9x.it@gmail.com";
   const phone = "+84936536599";
+  const bornDate = "2021";
+  const fblink = "https://facebook.com/windyecommerce";
 
   const dates = {
     now: new Date().getFullYear(),
@@ -10,7 +16,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="mt-auto">
+      <footer className="bg-brand-orange mt-auto">
         <div className="footer-inner container mt-5">
           <div className="mx-auto grid grid-cols-2 gap-4 md:grid-cols-7 xl:grid-cols-12">
             <div className="logo-area col-span-1 md:col-span-4">
@@ -19,7 +25,7 @@ export default function Footer() {
                   width="150"
                   height="20"
                   viewBox="0 0 150 20"
-                  className="text-slate-900 h-6 w-auto dark:text-white"
+                  className="h-6 w-auto text-slate-900 dark:text-white"
                 >
                   <path
                     fill="#38bdf8"
@@ -34,9 +40,19 @@ export default function Footer() {
                 </svg>
               </p>
               Windcommerce is based in Hanoi, Vietnam. We believe in delivering
-              total solutions to our clients from design to support.
-              <ul>
-                <li>FB</li>
+              total solutions to our clients from design to implements.
+              <ul className="flex gap-2 pt-4">
+                <li>
+                  <Link href={fblink} className="fb-social">
+                    <Image
+                      className="logo-brand mx-auto mb-4"
+                      src="/images/socials/facebook.png"
+                      width="26"
+                      height="26"
+                      alt="service-develop"
+                    />
+                  </Link>
+                </li>
               </ul>
             </div>
             <div className="service-area md:col-span-2">
@@ -69,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="copyright | my-4 text-center">
-          2021 - {currentYear} © WINDYECOMMERCE
+          {bornDate} - {currentYear} © WINDYECOMMERCE
         </p>
       </footer>
     </>

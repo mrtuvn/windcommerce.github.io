@@ -1,17 +1,18 @@
+"use client";
 import Link from "next/link";
 
 export default function Header() {
   return (
     <>
-      <header className="bg-main-orange md:mb-8">
+      <header className="bg-brand-orange md:mb-8">
         <div className="container">
-          <div className="flex space-between w-full items-center py-4">
+          <div className="space-between flex w-full items-center justify-center py-4">
             <div className="logo-main">
               <svg
                 width="150"
                 height="20"
                 viewBox="0 0 150 20"
-                className="text-slate-900 dark:text-white w-auto h-6"
+                className="h-6 w-auto text-slate-900 dark:text-white"
               >
                 <path
                   fill="#38bdf8"
@@ -26,8 +27,8 @@ export default function Header() {
               </svg>
             </div>
 
-            <div className="navs-links | ml-auto">
-              <nav className="main-nav md:inline-flex items-center">
+            <div className="navs-links | ml-auto hidden md:block">
+              <nav className="main-nav items-center md:inline-flex">
                 <button
                   className="menu-toggle"
                   aria-expanded="false"
@@ -38,13 +39,13 @@ export default function Header() {
                 </button>
                 <ul
                   data-state="closed"
-                  className="primary-navigation flex items-center sm:flex-col md:flex-row sm:flex-wrap gap-4"
+                  className="primary-navigation flex items-center gap-4 sm:flex-col sm:flex-wrap md:flex-row"
                 >
                   <li>
-                    <Link href="#">Magento Support</Link>
+                    <Link href="#">Magento Themes</Link>
                   </li>
                   <li>
-                    <Link href="#">Integrate Themes</Link>
+                    <Link href="#">Integrate Modules</Link>
                   </li>
                   <li>
                     <Link href="#" className="design">

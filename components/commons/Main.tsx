@@ -1,12 +1,6 @@
-import Image from "next/image";
+"use client";
 
-function ExtraMarkUp() {
-  return (
-    <div>
-      <p>Sample pure function inside tsx</p>
-    </div>
-  );
-}
+import Image from "next/image";
 
 export default function Main() {
   return (
@@ -25,10 +19,10 @@ export default function Main() {
         </section>
         <section className="main-services mb-4 sm:text-center md:mb-8">
           <div className="container">
-            <div className="services-wrap xs:flex-col my-5 flex gap-[12] sm:flex-col md:flex-row">
-              <div className="magento2-development xs:w-full rounded-bl-lg rounded-tl-lg bg-custom-brown text-white sm:p-2 md:w-1/3 md:p-6">
+            <div className="services-wrap my-5 flex flex-col md:flex-row">
+              <div className="magento2-development xs:w-full bg-brand-brown xs:text-center flex flex-col rounded-bl-lg rounded-tl-lg p-2 text-white md:w-1/3 md:p-8">
                 <Image
-                  className="logo-brand mx-auto mb-4"
+                  className="logo-brand mx-auto mb-4 min-h-[100]"
                   src="/images/magento2.png"
                   width="80"
                   height="80"
@@ -37,7 +31,7 @@ export default function Main() {
                 <p className="service-title pb-4 uppercase md:text-2xl">
                   Magento 2 Development
                 </p>
-                <div>
+                <div className="mt-auto">
                   <p className="mb-4 line-clamp-3">
                     Using modern tools and cutting-edge technologies, Magento 2
                     is more flexible, open and more compatible than any other
@@ -49,17 +43,12 @@ export default function Main() {
                   </a>
                 </div>
               </div>
-              <div className="nextjs-development xs:w-full bg-main-orange text-white sm:p-2 md:w-1/3 md:p-6">
+              <div
+                className={`xs:w-full bg-brand-orange  xs:text-center flex flex-col p-4 md:w-1/3 md:p-8`}
+              >
                 <div className="mx-auto mb-4 flex justify-center gap-2 text-center">
                   <Image
-                    className="logo-brand"
-                    src="/images/react.svg"
-                    width="120"
-                    height="120"
-                    alt="service-develop"
-                  />
-                  <Image
-                    className="logo-brand"
+                    className="logo-brand min-h-[100]"
                     src="/images/next-js.svg"
                     width="120"
                     height="120"
@@ -69,7 +58,7 @@ export default function Main() {
                 <p className="service-title pb-4 uppercase md:text-2xl">
                   Nextjs Development
                 </p>
-                <div>
+                <div className="mt-auto">
                   <p className="mb-4 line-clamp-3">
                     Using modern tools and technologies, Nextjs is more flexible
                     also capability with React ecosystem, open and more
@@ -82,9 +71,9 @@ export default function Main() {
                   </a>
                 </div>
               </div>
-              <div className="consults-audit xs:w-full rounded-br-lg rounded-tr-lg bg-custom-brown text-white sm:p-2 md:w-1/3 md:p-6">
+              <div className="consults-audit xs:w-full  bg-brand-brown xs:text-center flex flex-col rounded-br-lg rounded-tr-lg p-2 text-white md:w-1/3 md:p-8">
                 <Image
-                  className="logo-brand mx-auto mb-4"
+                  className="logo-brand mx-auto mb-4 min-h-[100]"
                   src="/images/audit.svg"
                   width="80"
                   height="80"
@@ -93,7 +82,7 @@ export default function Main() {
                 <p className="service-title pb-4 uppercase md:text-2xl">
                   Consulting
                 </p>
-                <div>
+                <div className="mt-auto">
                   <p className="mb-4 line-clamp-3">
                     We also provide consulting and audit projects or sites to
                     give best advices. Help you improve website for fastest
@@ -203,7 +192,7 @@ export default function Main() {
                 />
                 <div className="form-actions col-span-2 mx-auto">
                   <button
-                    className="btn-primary round-full inline-flex items-center rounded-full bg-main-primary p-2 px-4 text-center uppercase text-white"
+                    className="btn-primary round-full bg-brand-primary inline-flex items-center rounded-full p-2 px-4 text-center uppercase text-white"
                     type="submit"
                   >
                     SUbMIT
